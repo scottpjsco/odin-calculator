@@ -7,6 +7,10 @@ body {
     height: 100vh;
 }
 
+.calculator {
+    background-color: paleturquoise;
+}
+
 .btn {
     height: 50px;
     width: 50px;
@@ -14,3 +18,56 @@ body {
     font-size: 40px;
 }
 
+.first-row .clear {
+        border: 1px solid darkgrey;
+        border-radius: 10px;
+}
+
+.other-rows .number {
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
+
+
+.other-rows .operator {
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
+
+.other-rows .decimal {
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
+
+.other-rows .equal {
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#screen {
+    width: 225px;
+    border: 1px solid olivedrab;
+    height: 75px;
+    margin: 15px;
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}   
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 30px;
+}
