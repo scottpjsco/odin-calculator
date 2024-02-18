@@ -65,7 +65,11 @@ function calculate(){
     } else {
         previousValue /= currentValue;
     }
+    previousValue = roundNumber(previousValue);
+    previousValue = previousValue.toString();
+    currentValue = previousValue.toString();
+}
 
-    console.log(previousValue);
-
+function roundNumber (num){
+    return Math.round(num * 1000) / 1000;
 }
