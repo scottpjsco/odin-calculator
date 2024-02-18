@@ -35,7 +35,15 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
     equal.addEventListener("click", function(){
-        calculate()
+        if(currentValue != '' && previousValue != ''){
+            calculate()
+            previousScreen.textContent = '';
+            if(previousValue.length <= 5){
+                 currentScreen.textContent = previousValue;
+                 } else {
+                    currentScreen.textContent = previousValue.slice(0,5) + "...";
+                 }
+        }
     })
 
 })
